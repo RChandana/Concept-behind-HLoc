@@ -1,1 +1,1 @@
-# Concept-behind-HLoc
+# The concept of HLoc in brief
