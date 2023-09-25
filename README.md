@@ -147,16 +147,51 @@ Examples :
 * FREAK(Fast Retina Key point)
 
 
-##### After detecting key points and computing descriptors for multiple images, feature matching is performed to find correspondences between key points in different images.
-##### This is usually done using distance metrics like Euclidean distance (or) Hamming distance for binary descriptors.
+##### After detecting key points and computing descriptors for multiple images, feature matching is performed to find correspondences between key points in different images. This is usually done using distance metrics like Euclidean distance (or) Hamming distance for binary descriptors.
 
 ##### In summary, detectors identify key points in images while descriptors provide numerical representations of those key points. Together, they enable the extraction of the distinctive and robust features from images, which are crucial for various Computer Vision tasks .
 
 
 ## R2D2 - Reliable and Repeatable Detector and Descriptor
 
+R2D2 aims to predict a set of sparse locations of an image I, that are repeatable and reliable for the purpose of local feature matching.
 
 
 ## 6-DoF
+
+Six-degree-of-freedom localisation refers to the process of determining the precise position and orientation of an object or sensor in 3D space along six-different axes or degrees of freedom.
+
+* Translation along the X - axis
+* Translation along the Y - axis
+* Translation along the Z - axis
+* Rotation about the X - axis
+* Rotation about the Y - axis
+* Rotation about the Z - axis
+
+-> 6-DoF enables precise tracking and positioning of objects or devices in 3D space.
+
+-> Accurate 6-DoF localisation requires the use of specialized sensors and algorithms such as inertial measurement units(IMUs), GPS, Lidar, cameras and depth sensors.
+
+-> The goal is to provide precise and real-time information about an object's or device's position and orientation in 3D space.
+
+
 ## Image Stiching
+
+Image stitching is a Computer Vision technique that combines multiple overlapping images into a single, larger and seamless panaramic image.
+
+The process of image stitching involves aligning, blending, and merging individual images to create a unified and continuous view of a scene that extends beyond the field of view of a single image.
+
+
 ## Feature Extraction and Matching
+"Extractors" and "Matchers" are key components used for feature-based image analysis. 
+These are essential for identifying and matching distinctive features or key points between images.
+
+### Feature Extraction : 
+* An algorithm used to detect and describe distinctive local features or key points in an image.
+* It's main goal is to find characteristic points of interest in an image that can be used for matching, recognition and more.
+* Examples : SIFT, SURF, ORB and Harris Corner
+  
+### Feature Matching : 
+* An algorithm used to compare and establish correspondences between features or key points detected in multiple images.
+* It is crucial for tasks like image alignment, object tracking and image stitching. It helps identify common features in different images, allowing for estimation of transformations between them.
+* Examples : Brute-Force Matcher, FLANN, and RANSAC  
