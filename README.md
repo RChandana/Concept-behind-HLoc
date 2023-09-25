@@ -26,11 +26,11 @@ The following are the steps for performing HLoc :
 
 ### Datasets
 
-Prepare your datasets and make sure to upload them if the datasets are present locally in Google Colab.
-Organize your dataset into a directory structure compatible with the HLoc framework.
-Ensure that your dataset contains images and any metadata required for localization and mapping.
+Prepare the datasets and make sure to upload them if the datasets are present locally in Google Colab.
+Organize the dataset into a directory structure compatible with the HLoc framework.
+Ensure that the dataset contains images and any metadata required for localization and mapping.
 
-If your dataset is not already available locally, you can use the provided code to download and unzip your dataset. In your code, this is done using the following lines :
+If the dataset is not already available locally, you can use the provided code to download and unzip the dataset. In your code, this is done using the following lines :
 ```
 if not images.exists():
     !wget http://path.zip -P datasets/
@@ -80,7 +80,34 @@ The goal of image mapping is to identify regions, features or objects in one ima
 
 
 ## SLAM
+
+It refers to the ability of a robot or a device to simultaneously create a map of its environment and determine it's own position within that enivronment in real-time while it moves and observes the surroundings.
+
+
 ## Camera Calibration
+
+The main goal of camera calibration is to correct any irregularities or distortions made by the camera module or sensor for accurate measurements.
+It basically determines the intrinsic and extrinsic parameters of a camera to model its imaging characteristics accurately.
+
+
+#### Intrinsic Properties : 
+* Focal Length(fx, fy) -> Convergence and Divergence
+* Principal Point(cx, cy) -> Optical Center
+* Distortion Coefficients(k1, k2, p1, p2, k3) -> This includes lens distortion, radial and tangential distortions making straight lines appear curved.
+
+#### Extrinsic Properties :  
+* Rotation Matrix(R) -> It is the camera's orientation and specifies how the camera is rotated in 3D space.
+* Translation Vector(T) -> The camera's position in 3D space.
+
+#### Image Size : 
+* Width and Height
+
+#### Camera Model :
+* The type of camera used to caputre the images like pinhole or fisheye camera.
+
+#### Calibration Error Metrics : 
+* Determines the quality of calibration like reprojection error or root mean square error indicating how well the calibrated camera parameters fit the observed image data.
+
 ## Image Registration
 ## Detectors-Descriptors
 ## R2D2
