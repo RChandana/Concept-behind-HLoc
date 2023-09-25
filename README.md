@@ -54,9 +54,6 @@ You can choose different feature extraction and matching methods from the availa
 
 Estimate the relative pose between the pairs of images of the matched features.
 
-### Localisation
-### Visualisation
-
 
 
 
