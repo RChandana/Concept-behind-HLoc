@@ -103,14 +103,60 @@ It basically determines the intrinsic and extrinsic parameters of a camera to mo
 * Width and Height
 
 #### Camera Model :
-* The type of camera used to caputre the images like pinhole or fisheye camera.
+* The type of camera used to capture the images, like a pinhole or fisheye camera
 
 #### Calibration Error Metrics : 
-* Determines the quality of calibration like reprojection error or root mean square error indicating how well the calibrated camera parameters fit the observed image data.
+* It determines the quality of calibration, like reprojection error or root mean square error, indicating how well the calibrated camera parameters fit the observed image data.
 
 ## Image Registration
+
+Image registration refers to the process of aligning two or more images of the same scene or object to a common coordinate system, such that corresponding features or keypoints in the images overlap or match as closely as possible.
+
+
 ## Detectors-Descriptors
-## R2D2
+
+
+### Detectors : 
+They are algorithms or methods used to identify key points or points of interest in an image.
+These keypoints are the features of the image, which include edges, corners, or blobs.
+
+The primary purpose of detectors is to locate regions in an image that are likely to contain important visual information.
+Detectors output a list of key points or feature points, each characterized by its location (coordinates) within the image.
+
+Examples : 
+* Harris Corner Detector
+* Shi-Tomasi Corner Detector
+* FAST(Features from Accelerated Segment Test)
+* SIFT(Scale-Invariant Feature Transform)
+* SURF(Speeded-Up Robust Features)
+
+### Descriptors :
+They are algorithms or methods used to characterize the visual appearance of key points detected in the image. 
+They capture information about the local image region surrounding each key point.
+
+The primary purpose of descriptors is to create numerical representations (feature vectors) of key points that are distinctive and invariant to various transformations such as rotation, illumination and changes in scale.
+
+They output feature vectors that encode information about the local image content around each key point. 
+These vectors are designed to be robust to changes in viewpoint and lighting conditions.
+
+Examples : 
+* SIFT
+* SURF
+* BRIEF(Binary Robust Independent Elementary Features)
+* ORB(Oriented FAST and Rotated BRIEF)
+* FREAK(Fast Retina Key point)
+
+
+##### After detecting key points and computing descriptors for multiple images, feature matching is performed to find correspondences between key points in different images.
+##### This is usually done using distance metrics like Euclidean distance (or) Hamming distance for binary descriptors.
+
+##### In summary, detectors identify key points in images while descriptors provide numerical representations of those key points. Together, they enable the extraction of the distinctive and robust features from images, which are crucial for various Computer Vision tasks .
+
+
+## R2D2 - Reliable and Repeatable Detector and Descriptor
+
+
+
 ## 6-DoF
 ## Image Stiching
 ## Feature Extraction and Matching
