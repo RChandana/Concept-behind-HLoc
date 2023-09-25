@@ -1,7 +1,7 @@
 # The concept of HLoc in brief
 
-## HLoc : Hierarchical Localization - A toolbox for visual localisation
-It is the process of estimating the position or orientation (pose) of a robot or sensor within a larger environment.
+## HLoc : Hierarchical Localization - A toolbox for visual Localization
+It is the process of estimating the position or orientation (pose) of a robot or sensor within a large environment.
 
 HLoc allows robots and autonomous systems to have a robust and scalable approach to understanding their position and orientation in complex and dynamic environments.
 
@@ -58,10 +58,14 @@ Estimate the relative pose between the pairs of images of the matched features.
 ### Visualisation
 
 
+
+
 ## SuperGlue
 
 SuperGlue is an algorithm used as a graph neural network for feature matching.
 It is a CV algorithm developed for matching and estimating the correspondences between images.
+
+
 
 
 ## SuperPoint
@@ -69,9 +73,13 @@ It is a CV algorithm developed for matching and estimating the correspondences b
 The algorithm's primary goal is to detect distinctive features or keypoints of images and provide corresponding descriptors that can be used for various CV tasks.
 
 
+
+
 ## Structure-from-Motion(SfM)
 
 It is a Computer Vision and Photogrammatic technique used for the reconstruction of the 3D structure of a given scene from a set of 2D images or video frames.
+
+
 
 
 ## Image Matching
@@ -79,9 +87,13 @@ It is a Computer Vision and Photogrammatic technique used for the reconstruction
 The goal of image mapping is to identify regions, features or objects in one image that correspond to region, feature or object in another image.
 
 
+
+
 ## SLAM
 
-It refers to the ability of a robot or a device to simultaneously create a map of its environment and determine it's own position within that enivronment in real-time while it moves and observes the surroundings.
+It refers to the ability of a robot or a device to simultaneously create a map of its environment and determine it's own position within that environment in real-time while it moves and observes the surroundings.
+
+
 
 
 ## Camera Calibration
@@ -113,8 +125,9 @@ It basically determines the intrinsic and extrinsic parameters of a camera to mo
 Image registration refers to the process of aligning two or more images of the same scene or object to a common coordinate system, such that corresponding features or keypoints in the images overlap or match as closely as possible.
 
 
-## Detectors-Descriptors
 
+
+## Detectors-Descriptors
 
 ### Detectors : 
 They are algorithms or methods used to identify key points or points of interest in an image.
@@ -152,9 +165,13 @@ Examples :
 ##### In summary, detectors identify key points in images while descriptors provide numerical representations of those key points. Together, they enable the extraction of the distinctive and robust features from images, which are crucial for various Computer Vision tasks .
 
 
+
+
 ## R2D2 - Reliable and Repeatable Detector and Descriptor
 
 R2D2 aims to predict a set of sparse locations of an image I, that are repeatable and reliable for the purpose of local feature matching.
+
+
 
 
 ## 6-DoF
@@ -175,11 +192,15 @@ Six-degree-of-freedom localisation refers to the process of determining the prec
 -> The goal is to provide precise and real-time information about an object's or device's position and orientation in 3D space.
 
 
+
+
 ## Image Stiching
 
 Image stitching is a Computer Vision technique that combines multiple overlapping images into a single, larger and seamless panaramic image.
 
 The process of image stitching involves aligning, blending, and merging individual images to create a unified and continuous view of a scene that extends beyond the field of view of a single image.
+
+
 
 
 ## Feature Extraction and Matching
