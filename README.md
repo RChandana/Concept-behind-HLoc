@@ -5,6 +5,8 @@ It is the process of estimating the position or orientation (pose) of a robot or
 
 HLoc allows robots and autonomous systems to have a robust and scalable approach to understanding their position and orientation in complex and dynamic environments.
 
+Following are the key topics to get familiar with to work with HLoc.
+
 ## Table of Contents
 * [Steps for performing HLoc](#hloc-steps)
 * [SuperGlue](#superglue)
