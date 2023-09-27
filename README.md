@@ -69,7 +69,20 @@ It is a CV algorithm developed for matching and estimating the correspondences b
 
 ## SuperPoint
 
-The algorithm's primary goal is to detect distinctive features or keypoints of images and provide corresponding descriptors that can be used for various CV tasks.
+The algorithm's primary goal is to detect distinctive features or keypoints of images and provide corresponding descriptors that can be used for various CV tasks particularly if you are working on image feature extraction and matching.
+
+
+SuperPoint is built upon the Convolution Neural Network (CNN) architecture.
+
+
+Some of the important features are :
+* SuperPoint has the ability to detect the key points in an image automatically.
+* It also generates the description of features from the extracted key points.
+* SuperPoint is self-supervised, i.e., it does not require manual supervision while generating key points or descriptors during training. It is trained on unlabed image data.
+* It is designed to efficiently run on GPU and is suitable for real-time applications.
+
+
+
 
 
 
