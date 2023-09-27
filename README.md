@@ -9,8 +9,8 @@ Following are the key topics to get familiar with to work with HLoc.
 
 ## Table of Contents
 * [Steps for performing HLoc](#hloc-steps)
-* [SuperGlue](#superglue)
 * [SuperPoint](#superpoint)
+* [SuperGlue](#superglue)
 * [Structure-from-Motion(SfM)](#SfM)
 * [Image Matching](#image-matching)
 * [SLAM](#slam)
@@ -58,15 +58,6 @@ Estimate the relative pose between the pairs of images of the matched features.
 
 
 
-
-## SuperGlue
-
-SuperGlue is an algorithm used as a graph neural network for feature matching.
-It is a CV algorithm developed for matching and estimating the correspondences between images.
-
-
-
-
 ## SuperPoint
 
 The algorithm's primary goal is to detect distinctive features or keypoints of images and provide corresponding descriptors that can be used for various CV tasks particularly if you are working on image feature extraction and matching.
@@ -75,15 +66,23 @@ The algorithm's primary goal is to detect distinctive features or keypoints of i
 SuperPoint is built upon the Convolution Neural Network (CNN) architecture.
 
 
-Some of the important features are :
+Some of the important features of SuperPoint are :
 * SuperPoint has the ability to detect the key points in an image automatically.
 * It also generates the description of features from the extracted key points.
-* SuperPoint is self-supervised, i.e., it does not require manual supervision while generating key points or descriptors during training. It is trained on unlabed image data.
+* SuperPoint is self-supervised, i.e., it does not require manual supervision while generating key points or descriptors during training. It is trained on unlabeled image data.
 * It is designed to efficiently run on GPU and is suitable for real-time applications.
 
 
 
+## SuperGlue
 
+SuperGlue is an algorithm used as a graph neural network for feature matching.
+It is a CV algorithm developed for matching and estimating the correspondences between images.
+It was introduced as an extension to the SuperPoint model.
+
+Some of the important features of SuperGlue are :
+* Used as feature matching to find correlations between key points or feature points in different images.
+* 
 
 
 
@@ -96,7 +95,7 @@ It is a Computer Vision and Photogrammatic technique used for the reconstruction
 
 ## Image Matching
 
-The goal of image mapping is to identify regions, features or objects in one image that correspond to region, feature or object in another image.
+The goal of image mapping is to identify regions, features, or objects in one image that correspond to a region, feature, or object in another image.
 
 
 
