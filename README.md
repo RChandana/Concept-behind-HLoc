@@ -82,8 +82,8 @@ It was introduced as an extension to the SuperPoint model.
 
 Some of the important features of SuperGlue are :
 * Used as feature matching to find correlations between key points or feature points in different images.
-* 
-
+* It uses the Geometric Verification step, where it ensures that the matched features are not just similar but also consistent with the expected geometric relationships between the images.
+* SuperGlue is built upon Graph Neural Networks (GNN)
 
 
 ## Structure-from-Motion(SfM)
